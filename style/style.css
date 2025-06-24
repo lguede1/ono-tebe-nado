@@ -1,5 +1,76 @@
-*{
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ul{
+list-style-type: circle;
+}
+
+a{
     color: black;
-    font-size: 40px;
+}
+
+body{
+    font-family: "EB Garamond", sans-serif;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0px;
+    
+}
+
+.content-section{
+  box-sizing: border-box;
+  width: 1100px;
+  margin: auto;
+  background-color: #FFFFFF;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.header-section{
+    color: black;
+    padding: 72px 24px 96px 24px;
+    display: grid;
+    grid-template-columns: 451px 148px 452px;
+    place-items: center end;
+}
+
+.header-menu-nav{
+    margin: 0 30px 0 0px;
+}
+
+.header-menu-list-nav {
+    display: flex;
+    flex-direction: row;
+    min-width: 392px;
+    gap: 18px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.header-menu-item{
+    padding:0 9px 0 3px;
+    
+}
+
+.no-dot-unline{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header-logo{
+    size: 148px 105px;
+}
+
+.header-menu-list-contact{
+    display: flex;
+    max-width: 240.52px;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0 31px 0 0;
 
 }

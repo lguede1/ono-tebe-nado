@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: /* local не нужен? */ 
+    url(./Raleway-VariableFont_wght.ttf) format("truetype");
+    /* почему ./ перед названием шрифта а не полный путь /setup/fonts/...? */
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src:
+    url(./Raleway-VariableFont_wght.ttf) format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
