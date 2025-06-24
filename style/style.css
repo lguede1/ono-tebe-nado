@@ -71,6 +71,7 @@ body{
     flex-wrap: wrap;
     gap: 5px;
     list-style-type: none;
-    padding: 0 31px 0 0;
+    padding: 0 31px 9px 0;
+    margin: 13px 0 13px 0;
 
 }
