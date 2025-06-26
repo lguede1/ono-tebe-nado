@@ -5,10 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 } 
+ ul{list-style-type: none;
 
-ul{
-list-style-type: circle;
-}
+ }
 
 a{
     color: black;
@@ -16,13 +15,12 @@ a{
 
 body{
     font-family: "EB Garamond", sans-serif;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
     text-decoration-thickness: 0px;
     letter-spacing: 0.01em;  
 }
 
 .content-section{
-  box-sizing: border-box;
   width: 1100px;
   margin: auto;
 }
@@ -50,6 +48,7 @@ body{
 }
 
 .header-menu-list-nav {
+    list-style-type: circle;
     display: flex;
     flex-direction: row;
     min-width: 392px;
@@ -75,11 +74,11 @@ body{
     gap: 4px;
     list-style-type: none;
     margin: 0 27px 7px 0;
-
 }
 /*---------header---------*/
 
 /*---------jambotron---------*/
+
 .jambotron-section{
     color: #FFFFFF;
     background: url(/image/lotus-flower.png);
@@ -168,10 +167,146 @@ body{
     padding: 12px 32px;
     color: rgb(255, 255, 255);
     border: 1px solid #ffffff;
- 
+}
+
+/*---------jambotron---------*/
+
+/*---------lots---------*/
+.lots-section{
+    display:flex;
+    flex-wrap: wrap;
+    height: 692px;
+}
+
+.head-text-lots{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding: 179px 0 0 64px;
+}
+
+.cards-lots{
+    line-height: 120%;
+    padding: 27px 25px;
+    height: 100%;
+    width: 1100px;
+    display: flex;
+    gap: 25px;
+}
+
+.first-lot-cards{
+    background-image: url(/image/first-element.png);
+    position: relative;
+    z-index: -1;
+}
+
+.second-lot-cards{
+    background-image: url(/image/second-element.png);
+    position: relative;
+    z-index: -1;
+}
+
+.third-lot-cards{
+    background-image: url(/image/third-elememt.png);
+    position: relative;
+    z-index: -1;
+}
+
+.cards-background-fogging{
+    background-color: #00000060;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 50px 35px 44px 39px;
+}
+
+.lot-item{
+    display: flex;
+    box-sizing: border-box;
+    color: #fff;
+    height: 563px;
+    width: 334px;
+    flex: 1;
+    text-align: left;
+}
+
+.main-text-lots-cards{
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 120%;
+}
+
+.discription-lots-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 360px;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.cards-bottom-link{
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 3px 0 0 63px;
+}
+
+/*---------lots---------*/
 
 
+/*---------about---------*/
 
+.about-section{
+    padding: 183px 0 0 71px;
+    display:  grid;
+    grid-template-columns: 240px 693px;
+    gap: 72px;
+}
+.about-head-text {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 102px 0 99px 0;
+}
+
+.about-text{
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 24px;   
+}
+
+/*---------about---------*/
+
+/*---------footer---------*/
+
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    padding: 155px 50px 88px 48px;
+    font-size: 18px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.fotter-menu-nav{
+    text-align: center;
+    padding-right: 24px;
+}
+
+.footer-menu-list-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.fotter-repeat-contacrt{
+    padding-top: 3px;
 }
 
 
@@ -179,6 +314,4 @@ body{
 
 
 
-
-
-/*---------jambotron---------*/
+/*---------footer---------*/
