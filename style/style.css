@@ -326,7 +326,7 @@ body{
 
 .footer-menu-nav{
     text-align: center;
-    margin: 2px 23px 0 0;
+    margin: 0px 0px 0 0;
 }
 
 .footer-menu-list-icon{
@@ -336,7 +336,16 @@ body{
 }
 
 .footer-repeat-contact{
+    
+    padding-top: 3px;
+    font-style: normal;
     padding-left: 3px;
+}
+
+.contact-info{
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    width: 240px;
 }
 
 /*---------footer---------*/
