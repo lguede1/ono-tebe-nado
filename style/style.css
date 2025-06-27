@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
- ul{list-style-type: none;
+}
 
- }
+ ul{
+    list-style-type: none;
+}
 
 a{
     color: black;
@@ -34,10 +35,9 @@ body{
 /*---------header---------*/
 
 .header-section{
-
     padding: 92px 26px ;
     display: grid;
-    grid-template-columns: 451px 148px 450px;
+    grid-template-columns:3fr 1fr 3fr;
     place-items: center end;
     background-color: #FFFFFF;
     font-size: 18px;
@@ -67,14 +67,14 @@ body{
     size: 148px 105px;
 }
 
-.header-menu-list-contact{
+.common-menu-list-contact{
     display: flex;
     max-width: 240.52px;
     flex-direction:column;
     flex-wrap: wrap;
     gap: 4px;
     list-style-type: none;
-    margin: 0 27px 7px 0;
+    margin: 4px 23px 7px 0;
 }
 /*---------header---------*/
 
@@ -97,29 +97,9 @@ body{
     z-index: 1;
     width: 1100px;
     height: 757px;
-
 }
 
-.accent-span{
-    font-weight: 700;
-    font-size: 100px;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    line-height: 100%;
-}
-
-.strange-spacing-ono{
-    padding-left: 30px;
-}
-
-.strange-spacing-tebe{
-    padding-left: 30px ;
-}
-
-.strange-spacing-nado{
-    padding-right: 30px;
-}
-
+/*
 .item-1{
     grid-area: ono;
 }
@@ -131,7 +111,7 @@ body{
 }
 
 .jambotron-text-derection{
-    height: 335px;
+    height: 587px;
     width: 1000px;
     padding: 170px 50px 0 50px;
     display: grid;
@@ -141,13 +121,46 @@ body{
     "ono ono . . ."
     ". tebe tebe tebe ."
     ". . . nado nado";
-    justify-content: start;
+}
+*/
+
+.jambotron-text-derection{
+    padding: 170px 50px 66px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+    align-items: center;
+    gap: 25px
+}
+
+.item-ono{
+    align-self: flex-start;
+}
+
+.item-tebe{
+    align-self: center;
+    padding: 0px 60px 0 0;
+}
+
+.item-nado{
+    align-self: flex-end;
+}
+
+.accent-span{
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-right:-0.3em;
+    line-height: 1.01;
+}
+
+.strange-spacing{
+    letter-spacing: 60px;
 }
 
 .jambotron-section-bottom{
-    margin-top: 320px ;
-    display: flex;
-
+    padding-top: 67px;
 }
 
 .jambotron-bottom-text{
@@ -176,22 +189,21 @@ body{
 .lots-section{
     display:flex;
     flex-wrap: wrap;
-    height: 692px;
+    height: 100%;
 }
 
 .head-text-lots{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
-
     padding: 179px 0 0 64px;
 }
 
 .cards-lots{
     line-height: 120%;
     padding: 27px 25px;
-    height: 100%;
-    width: 1100px;
+    height: 618px;
+    width: 100%;
     display: flex;
     gap: 25px;
 }
@@ -214,6 +226,7 @@ body{
     z-index: -1;
 }
 
+/*
 .cards-background-fogging{
     background-color: #00000060;
     position: absolute;
@@ -221,16 +234,34 @@ body{
     width: 100%;
     z-index: 1;
     padding: 50px 35px 44px 39px;
-}
+} 
+*/
 
 .lot-item{
     display: flex;
     box-sizing: border-box;
+    padding: 52px 35px 44px 39px;
     color: #fff;
     height: 563px;
     width: 334px;
-    flex: 1;
+    flex: -1;
     text-align: left;
+}
+
+.lot-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.cards-background-fogging{
+    position: relative;
+    z-index: 1;
 }
 
 .main-text-lots-cards{
@@ -263,7 +294,7 @@ body{
 /*---------about---------*/
 
 .about-section{
-    padding: 183px 0 0 71px;
+    padding: 182px 0 0 71px;
     display:  grid;
     grid-template-columns: 240px 693px;
     gap: 72px;
@@ -295,9 +326,9 @@ body{
     align-content: flex-start;
 }
 
-.fotter-menu-nav{
+.footer-menu-nav{
     text-align: center;
-    padding-right: 24px;
+    margin: 2px 23px 0 0;
 }
 
 .footer-menu-list-icon{
@@ -306,13 +337,8 @@ body{
     gap: 48px;
 }
 
-.fotter-repeat-contacrt{
-    padding-top: 3px;
+.footer-repeat-contact{
+    padding-left: 3px;
 }
-
-
-
-
-
 
 /*---------footer---------*/
